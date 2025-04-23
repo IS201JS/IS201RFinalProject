@@ -1,0 +1,60 @@
+.titlepicture {
+    background-image: url('https://t4.ftcdn.net/jpg/09/10/17/21/360_F_910172134_dmxnXlD3Wss4hpCGLELOyqeqCGBDz8Ng.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.body {
+    background-image: url('https://images.pexels.com/photos/5238670/pexels-photo-5238670.jpeg');
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* New flex container for image and text side by side */
+.image-text-container {
+    display: flex;          /* Use flexbox to arrange children side by side */
+    align-items: center;    /* Vertically center the items */
+    justify-content: space-between; /* Add space between text and image */
+    margin: 20px 0;         /* Add some space above and below */
+}
+
+.image-container img {
+    max-height: 200px;      /* Limit the image height */
+    width: auto;            /* Maintain the image's aspect ratio */
+    margin-right: 20px;     /* Add some space to the right of the image */
+}
+
+.text-container {
+    flex: 1;                /* Allow the text container to take up the remaining space */
+    max-width: 60%;         /* Limit text width */
+}
+
+/* Make sure the Tableau embed stays responsive */
+.tableau-container {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.tableauPlaceholder {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tableauViz {
+    width: 100% !important;
+    height: 500px !important;
+}
